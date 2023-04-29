@@ -5,3 +5,6 @@ Uses Ipapi.co to grab the user's info.
 
  # 🥸 People can use a vpn to evade the data collecting 🥸
 I can't fix this.
+
+# 👉 Setup 👈
+You must add a tiny bit of code yourslelf to send this page's data to your database.
