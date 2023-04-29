@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          font-size: 200%;
+        }
+        body {
+          background-color: black;
+          color: white;
+        }
+        h1, h2, h3, p {
+          text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        }
+        body {
+          margin: 0;
+          padding: 2em;
+        }
+      </style>
+    <title>Tacogamerman on github</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Some of your Information</h1>
+    <hr>
+    <h2>Some info about you:</h2>
+    <p><strong>IP Address:</strong> <span id="ip_address"></span></p>
+    <p><strong>Country Name:</strong> <span id="country_name"></span></p>
+    <p><strong>State name:</strong> <span id="region_name"></span></p>
+    <p><strong>City Name:</strong> <span id="city_name"></span></p>
+    <p><strong>Latitude:</strong> <span id="latitude"></span></p>
+    <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+    <hr>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.getJSON("https://ipapi.co/json/", function(data) {
+                $("#ip_address").text(data.ip);
+                $("#continent_name").text(data.continent_name);
+                $("#country_name").text(data.country_name);
+                $("#region_name").text(data.region);
+                $("#city_name").text(data.city);
+                $("#latitude").text(data.latitude);
+                $("#longitude").text(data.longitude);
+            });
+
+            $("#user_agent").text(navigator.userAgent);
+        });
+    </script>
+</body>
+</html>
+<h2>
+    TacoInfo
+</h2>
+<h6>
+    Tacogamerman on github
+</h6>
