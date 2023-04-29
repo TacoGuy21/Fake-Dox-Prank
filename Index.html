@@ -38,7 +38,6 @@
         $(document).ready(function() {
             $.getJSON("https://ipapi.co/json/", function(data) {
                 $("#ip_address").text(data.ip);
-                $("#continent_name").text(data.continent_name);
                 $("#country_name").text(data.country_name);
                 $("#region_name").text(data.region);
                 $("#city_name").text(data.city);
