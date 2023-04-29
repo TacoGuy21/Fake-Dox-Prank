@@ -3,7 +3,7 @@ Grab the user of your site's ip address, country, state, county, latitude and lo
 
 Uses Ipapi.co to grab the user's info.
 
- # 🥸 People can use a vpn to evade the data collecting 🥸
+ # 🥸 People can use a vpn to evade data collecting 🥸
 I can't fix this.
 
 # 👉 Setup 👈
