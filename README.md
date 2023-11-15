@@ -4,7 +4,7 @@ Show the visitor of this site's ***Ip address***, country, state, county, ***lat
 Uses Ipapi.co to grab the user's info.
 
  # 🥸 People can use a vpn 🥸
-I can't fix this.
+I can't fix this. ***<-------***
 
 # 🤩 Important 🤩
 
