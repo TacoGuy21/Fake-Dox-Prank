@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          font-size: 200%;
-        }
-        body {
-          background-color: black;
-          color: white;
-        }
-        h1, h2, h3, p {
-          text-shadow: 2px 2px 2px rgba(255, 165, 0);
-        }
-        body {
-          margin: 0;
-          padding: 2em;
-        }
-      </style>
-    <title>Trolled!</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 2em;
+        }
+        h1 {
+            color: #ffa500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        hr {
+            border: 1px solid #ffa500;
+        }
+        p {
+            margin: 0.5em 0;
+        }
+        strong {
+            color: #ffa500;
+        }
+        span {
+            color: #b3b3b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Some of your Information</h1>
+    <h1>Hi! Here's Your Exact Location:</h1>
     <hr>
-    <h2>Some info about you:</h2>
     <p><strong>IP Address:</strong> <span id="ip_address"></span></p>
-    <p><strong>Country Name:</strong> <span id="country_name"></span></p>
-    <p><strong>State name:</strong> <span id="region_name"></span></p>
-    <p><strong>City Name:</strong> <span id="city_name"></span></p>
+    <p><strong>Country:</strong> <span id="country_name"></span></p>
+    <p><strong>Region:</strong> <span id="region_name"></span></p>
+    <p><strong>City:</strong> <span id="city_name"></span></p>
     <p><strong>Latitude:</strong> <span id="latitude"></span></p>
     <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+    <p><strong>Postal Code:</strong> <span id="postal_code"></span></p>
+    <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+    <p><strong>ISP:</strong> <span id="isp"></span></p>
     <hr>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -43,16 +53,11 @@
                 $("#city_name").text(data.city);
                 $("#latitude").text(data.latitude);
                 $("#longitude").text(data.longitude);
+                $("#postal_code").text(data.postal);
+                $("#timezone").text(data.timezone);
+                $("#isp").text(data.org);
             });
-
-            $("#user_agent").text(navigator.userAgent);
         });
     </script>
 </body>
 </html>
-<h2>
-    TacoTake
-</h2>
-<h3>
-    Tacoamerman on github
-</h3>
